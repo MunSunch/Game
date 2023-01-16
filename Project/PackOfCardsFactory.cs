@@ -3,9 +3,9 @@ using System.Collections;
 
 namespace Project
 {
-    public class FabricPackOfCards
+    public class PackOfCardsFactory
     {
-        public static ArrayList create(TypePack type)
+        public static ArrayList Create(TypePack type)
         {
             switch (type)
             {

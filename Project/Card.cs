@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 
 namespace Project
 {
@@ -28,13 +27,12 @@ namespace Project
 
         public override int GetHashCode()
         {
-            return _suit.GetHashCode() ^ _typeCard.GetHashCode();
+            return _suit.GetHashCode() ^ _typeCard.GetHashCode() * 11;
         }
-
-
+        
         public override string ToString()
         {
-            return $"Karta: {_typeCard}-{_suit}";
+            return $"Karta{_typeCard}-{_suit}";
         }
 
         public int CompareTo(object obj)
